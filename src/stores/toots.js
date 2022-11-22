@@ -14,12 +14,12 @@ export const useTootsStore = defineStore("toots", {
   persist: true,
   actions: {
     scheduleToot() {
-      console.log(this.baseUrl);
-      console.log(this.token);
-      console.log(this.scheduledAt);
-      console.log(this.status);
+      // console.log(this.baseUrl);
+      // console.log(this.token);
+      // console.log(this.scheduledAt);
+      // console.log(this.status);
       const realScheduledAt = DateTime.fromISO(this.scheduledAt).toISO();
-      console.log(realScheduledAt);
+      // console.log(realScheduledAt);
       // axios.post(`${this.baseUrl}/api/v1/apps`, {client_name:'tootulator',scopes:"write:statuses",redirect_uris:'urn:ietf:wg:oauth:2.0:oob'}).then((response) => {console.log(response)}).catch((error) => {console.log(error)})
       axios
         .post(
