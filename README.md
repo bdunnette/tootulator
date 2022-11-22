@@ -1,6 +1,10 @@
 # tootulator
 
-This template should help get you started developing with Vue 3 in Vite.
+_"toot you later"_
+
+A simple tool to generate scheduled toots for Mastodon. All javascript, no server required.*
+
+_*except for the Mastodon server, of course._
 
 ## Recommended IDE Setup
 
