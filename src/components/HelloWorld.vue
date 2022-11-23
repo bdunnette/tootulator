@@ -15,7 +15,9 @@ const toots = useTootsStore();
       />
     </div>
     <div class="mb-3">
-      <label for="token" class="form-label">Token (needs at least <em>write:statuses</em> permission)</label>
+      <label for="token" class="form-label"
+        >Token (needs at least <em>write:statuses</em> permission)</label
+      >
       <input
         type="text"
         class="form-control"
