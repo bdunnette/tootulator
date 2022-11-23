@@ -47,4 +47,28 @@ const toots = useTootsStore();
       </button>
     </div>
   </div>
+  <div class="messages">
+    <div class="mb-3" v-for="(message, index) in toots.messages" :key="index">
+      <div
+        class="alert"
+        :class="message.error ? 'alert-danger' : 'alert-success'"
+        role="alert"
+      >
+        <span v-if="message.error">{{ message.response.message }}</span>
+        <span v-else
+          >Scheduled toot #{{ message.response.data.id }} for posting at
+          {{ message.response.data.scheduled_at }}</span
+        >
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+          @click="toots.messages.pop({ index })"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
