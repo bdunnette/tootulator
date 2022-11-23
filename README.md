@@ -1,5 +1,7 @@
 # tootulator
 
+[![pages-build-deployment](https://github.com/bdunnette/tootulator/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/bdunnette/tootulator/actions/workflows/pages/pages-build-deployment)
+
 _"toot you later"_
 
 A simple tool to generate scheduled toots for Mastodon. All javascript, no server required.*
