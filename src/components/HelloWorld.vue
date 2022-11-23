@@ -56,9 +56,11 @@ const toots = useTootsStore();
       >
         <span v-if="message.error">{{ message.response.message }}</span>
         <span v-else
-          >Scheduled toot #{{ message.response.data.id }} for posting at
-          {{ message.response.data.scheduled_at }}</span
-        >
+          >Scheduled toot #{{ message.response.data.id }} for posting
+          <span v-if="message.response.data.scheduled_at">
+            at {{ message.response.data.scheduled_at }}</span
+          >
+        </span>
         <button
           type="button"
           class="close"
